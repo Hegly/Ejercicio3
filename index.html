@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de unidades</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Conversor de unidades</h1>
+
+    <hr>
+
+    <h4>Conversor de Km a m</h4>
+    <form id="kmToMetersForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="kmInput">Kilómetros (km)</label>
+                        <input type="number" class="form-control" id="kmInput">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label>Metros (m)</label>
+                        <input type="text" class="form-control" id="resultadoKmToMeters">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-outline-dark" onclick="convertirKmAMetros()">Convertir</button>
+        <button type="button" class="btn btn-outline-secondary" onclick="limpiarCampo('kmInput')">Limpiar</button>
+    </form>
+    
+    <hr>
+
+    <h4>Conversor de m a cm</h4>
+    <form id="mToCmForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="mInput">Metros (m)</label>
+                        <input type="number" class="form-control" id="mInput">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label>Centimetros (cm)</label>
+                        <input type="text" class="form-control" id="resultadoMToCm">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-outline-dark" onclick="convertirMetrosACentimetros()">Convertir</button>
+        <button type="button" class="btn btn-outline-info" onclick="limpiarCampo('mInput')">Limpiar</button>
+    </form>
+    
+    <hr>
+
+    <h4>Conversor de ft a pulg</h4>
+    <form id="ftToInchesForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group">
+                        <label for="ftInput">Pies (ft)</label>
+                        <input type="number" class="form-control" id="ftInput">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group">
+                        <label>Pulgadas (pulg)</label>
+                        <input type="text" class="form-control" id="resultadoFtToInches">
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+        <button type="button" class="btn btn-outline-dark" onclick="convertirPiesAPulgadas()">Convertir</button>
+        <button type="button" class="btn btn-outline-secondary" onclick="limpiarCampo('ftInput')">Limpiar</button>
+
+    </form>
+    
+    <hr>
+
+    <h4>Conversor de yarda a pulg</h4>
+    <form id="yardToInchesForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+        <div class="form-group">
+        <label for="yardaInput">Yardas (yarda)</label>
+        <input type="number" class="form-control" id="yardaInput">
+      </div>
+    </div>
+    <div class="col-3">
+        <div class="form-group">
+            <label>Pulgadas (pulg)</label>
+            <input type="text" class="form-control" id="resultadoYardToInches">
+        </div>
+    </div>
+</div>
+</div>    
+
+    <button type="button" class="btn btn-outline-dark" onclick="convertirYardasAPulgadas()">Convertir</button>
+    <button type="button" class="btn btn-outline-info" onclick="limpiarCampo('yardaInput')">Limpiar</button>
+    
+    </form>
+
+  </div>
+  <hr>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
